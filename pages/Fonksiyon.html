@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/ss.css">
+	</head>
+<body>
+    <nav class="dropdownmenu">
+  <ul>
+    <li> <a   href=../index.html>Home</a></li>
+
+    <li><a href="#homework">Homework</a>
+      <ul id="submenu">
+        <li> <a href="Giriş.html">JavaScript Giriş</a></li>
+               <li> <a href="Syntax.html">JavaScript Yazılım (Syntax) yapısı</a></li>
+                <li> <a href="degiskenler.html">Değişkenler</a></li>
+                <li> <a href="Operatörler.html">Operatörler</a></li>
+               <li> <a href="Aritmetik.html">Aritmetik</a></li>
+                <li> <a href="Veri.html">Veri Tipleri</a></li>
+                <li> <a href="Fonksiyon.html">Fonksiyon Yapısı</a></li>
+               <li> <a href="Olaylar.html">Olaylar (Events)</a></li>
+                <li> <a href="Stringler.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a></li>
+                <li> <a href="koşul.html">If koşul yapıları</a></li>
+               <li> <a href="Döngüler.html">Döngüler</a></li>
+                <li> <a href="Tip.html">Tip Dönüşümleri</a></li>
+                <li> <a href="Calisma.html">Çalışma yapısı ve genel mimarisi</a></li>
+				<li> <a href="jsfonksiyon.html">JavaScript Fonksiyon Kullanımı</a></li>
+				<li> <a href="jsnesne.html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></li>
+				<li> <a href="jsdom.html">JavaScript DOM (Document Object Model) Kullanımı</a></li>
+			</ul>
+    </li>
+    
+  </ul>
+</nav>
+<br><br>
+  <div class="yazi">
+       <h1 class="baslik">Fonksiyon</h1>
+     
+      <!--<h2 style="color:brown">JavaScript </h2>-->
+       <span class="p"  style="color:black"  >Bir fonksiyon tanımı (fonksiyon betimlemesi, veya fonksiyon ifadesi de denir)  function anahtar kelimesinden sonra aşağıdaki kısımları içerir:
+     <br>
+       Fonksiyonun adı.<br>
+       Fonksiyonun aldığı parametreler (parantezler ile çevrili ve virgüller ile birbirinden ayrılmış olmalıdırlar).<br>
+      Çalıştırılacak JavaScript ifadeleri (süslü parantezler ile çevrilmelidir).<br>
+       </span>
+       <br>
+       <div class="kutu">
+          <br>
+              function karesiniAl(sayı) {<br>
+             return sayı * sayı;<br>
+              }<br><br>
+        </div>
+      
+        <br>
+       <span class="p"  style="color:darkviolet"  > Fonksiyonları çağırma:</span><span   style="color:black"> Bir fonksiyonu tanımlamakla o fonksiyon çalışmaz. Fonksiyonu tanımlamak kısaca, o fonksiyona bir isim vermek ve o fonkisyon çağırıldığında bizim için hangi eylemleri yapması gerektiğini belirtmektir. Fonksiyonu çağırmak, bu belirlenmiş eylemleri bizim o fonksiyona verdiğimiz parametrelerin de kullanılmasıyla gerçekleştirir.<br></span>
+       <br> 
+       <div class="kutu">
+          
+              <br>karesiniAl(5);<br><br>
+        </div>
+        
+        
+          <br>
+       <span class="p"  style="color:darkviolet"  > Parametresiz Fonksiyonlar:</span><span   style="color:black"> Parametresiz fonksiyonlar adından da anlaşılacağı gibi herhangi bir parametreye gerek duymadan ve fonksiyonda tanımlanan kodların yerine getirilmesi ile çalışan fonksiyonlardır.<br></span>
+       <br> 
+       <div class="kutu">
+           function topla() {<br>
+        var kullaniciSayisi1 = prompt("Lütfen ilk sayıyı giriniz:", "");<br>
+        var kullaniciSayisi2 = prompt("Lütfen ikinci sayıyı giriniz:", "");<br>
+        alert(parseInt(kullaniciSayisi1) + parseInt(kullaniciSayisi2));<br>
+    }<br>
+    topla();<br>
+        </div>
+        
+          <br>
+       <span class="p"  style="color:darkviolet"  > FParametreli Fonksiyonlar:</span><span   style="color:black"> Kod yazarken iki değeri kısa bir şekilde toplamak istiyoruz diyelim. Ve bu kodları başka sayfalarda da kullanacağız. Bunun için aşağıdaki gibi parametreli bir fonksiyon tanımlamamız yeterlidir.<br></span>
+       <br> 
+       <div class="kutu">
+          
+              function topla(ilkSayi, ikinciSayi) {<br>
+              alert(ilkSayi + ikinciSayi);<br>
+              } <br>
+              topla(4, 5);<br>
+        </div>
+        
+        
+        
+     </div>
+  </div>
+  
+   </div>
+   
+</body>
+</html>

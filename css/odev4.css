@@ -1,0 +1,79 @@
+html{
+	
+}
+h1{
+	font-size: 3em;
+    text-shadow: 5px 3px 2px #556;
+	/*
+    font-family: Arial, sans-serif;
+	font-size: 50px;
+	text-align: center;
+	color: #369;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #999;
+	*/
+	 
+}
+.enter {
+    height: 2em;
+    width: 6em;
+    cursor: pointer;
+    /*border-radius: 8px;*/
+    background: #986;
+    font-weight: bold;
+}
+.tablo{
+	padding-left:200px;
+	font-size: 3em;
+    text-shadow: 5px 3px 2px #556;
+}
+.obs{
+	width: 650px;
+	height:700px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, .6);
+    text-align: center;
+    padding: 15px;
+	
+    
+   
+	
+}
+#yaz{
+	padding-left:200px;
+	font-size: 2em;
+    text-shadow: 1px 1px 1px #556;
+}
+body{
+	 background: url('../assets/arka.jpg ');
+ 
+}
+input:focus, 
+.a1{
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	
+	color: #714d69;
+	
+	padding-bottom: 2px;
+	padding-left:30px;
+}
+.b1{
+	
+	padding-right:20px;
+}
+input[type=text] {
+      padding-left: 40px;
+       border: 2px solid #369;
+       padding-left:20px;
+       border-radius: 4px;
+	   
+}
+
+
+
+
+
+
+	   
+	   

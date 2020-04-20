@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/ss.css">
+	</head>
+<body>
+  <nav class="dropdownmenu">
+  <ul>
+    <li> <a   href=../index.html>Home</a></li>
+
+    <li><a href="#homework">Homework</a>
+      <ul id="submenu">
+        <li> <a href="Giriş.html">JavaScript Giriş</a></li>
+               <li> <a href="Syntax.html">JavaScript Yazılım (Syntax) yapısı</a></li>
+                <li> <a href="degiskenler.html">Değişkenler</a></li>
+                <li> <a href="Operatörler.html">Operatörler</a></li>
+               <li> <a href="Aritmetik.html">Aritmetik</a></li>
+                <li> <a href="Veri.html">Veri Tipleri</a></li>
+                <li> <a href="Fonksiyon.html">Fonksiyon Yapısı</a></li>
+               <li> <a href="Olaylar.html">Olaylar (Events)</a></li>
+                <li> <a href="Stringler.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a></li>
+                <li> <a href="koşul.html">If koşul yapıları</a></li>
+               <li> <a href="Döngüler.html">Döngüler</a></li>
+                <li> <a href="Tip.html">Tip Dönüşümleri</a></li>
+                <li> <a href="Calisma.html">Çalışma yapısı ve genel mimarisi</a></li>
+				<li> <a href="jsfonksiyon.html">JavaScript Fonksiyon Kullanımı</a></li>
+				<li> <a href="jsnesne.html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></li>
+				<li> <a href="jsdom.html">JavaScript DOM (Document Object Model) Kullanımı</a></li>
+			</ul>
+    </li>
+    
+  </ul>
+</nav>
+<br><br>
+  <div class="yazi">
+       <h1 class="baslik">JavaScript Fonksiyon Kullanımı</h1>
+     
+      <!--<h2 style="color:brown">JavaScript </h2>-->
+       <span class="p"  style="color:black"  > JavaScript fonksiyonları genel işlevi itibariyle diğer programlama dillerindeki fonksiyonlara benzerler. Ancak JavaScript fonksiyonları birer nesne olduğundan bir değerdirler ve bu yüzden farklı bir çok şekilde kullanılabilirler. Bu yazıda ve takip eden yazılarda JavaScript fonksiyonlarıyla ilgili genel konular ve farklı kullanım şekilleri anlatılmaktadır.
+       </span>
+       <br><br>
+        <h3 style="color: red">Fonksiyon Tanımlama</h3>
+		<div ><img class="golgeli-kutu" src="../assets/f1.jpg" style="margin-left:50px" ></div><br><br>
+        <span class="p"  style="color:black">Bir fonksiyon adının yanına parantezleri yazmadan kullanmak fonksiyonun gövdesini / kendisini döndürür.
+        Fonksiyonlar birer sınıf örneği (nesne) olduğundan bir değer olarak kullanılabilirler.
+
+       </span><br>
+	   <br>
+        <div ><img class="golgeli-kutu" src="../assets/f2.jpg" style="margin-left:50px" ></div><br><br>
+		 <h3 style="color: red">Fonksiyona Parametre Gönderme</h3><br><br>
+       <span class="p"  style="color:black"  > Fonksiyonlar 255 adede kadar parametre alabilirler. Fonksiyon parametreleri fonksiyon tanımında fonksiyon adından sonraki parantezlerin içinde birer isimle bildirilir ve birden çok parametre varsa aralarına virgül konur. Parametrelerde tip belirtilmez.
+       Parametre olarak verilen bir sayının karesini hesaplayıp çıktıya yazan bir fonksiyon şöyle yazılabilir.
+       </span><br><br>
+	   <div ><img class="golgeli-kutu" src="../assets/f3.jpg" style="margin-left:50px" ></div><br><br>
+	   
+        <h3 style="color: red">Fonksiyonlardan Değer Döndürme</h3>
+        <span class="p"  style="color:black"  > Fonksiyonlar, yaptıkları işlemlerin sonucunda bir değer döndürebilirler. Fonksiyondan değer döndürmek için return ifadesi kullanılır. Bu ifadenin yanına döndüreceği değer yazılır. Fonksiyonun döndürdüğü değer fonksiyon çağrısı kullanarak (örneğin kare(5) yazarak) bir işlemde kullanılabilir veya bir değişkene atanabilir.
+       Bir sayının karesini hesaplayıp sonucu döndüren bir fonksiyon şöyle yazılabilir:
+       </span><br><br>
+     <div ><img class="golgeli-kutu" src="../assets/f4.jpg" style="margin-left:50px" ></div><br><br>
+        <span class="p"  style="color:black"  > Bu fonksiyonu diğer fonksiyonlar gibi parametreleri ile beraber adını yazarak çağırırız. Ancak farklı olarak bundan bir değer döneceğinden bu değeri bir yerlerde kullanabiliriz.
+       </span><br><br>
+    <div ><img class="golgeli-kutu" src="../assets/f5.jpg" style="margin-left:50px" ></div><br><br>
+        <span class="p"  style="color:black"  > Değer döndürmeyen bir fonksiyonun döndürdüğü sonuc undefined isimli özel bir değerdir. Bu değer tanımlanmamış anlamındadır.
+       </span><br><br>
+	   <div ><img class="golgeli-kutu" src="../assets/f6.jpg" style="margin-left:50px" ></div><br><br>
+      <span class="p"  style="color:black"  > Aynı şeyi return ifadesinin yanına bir şey yazmadığınızda da alırsınız.
+       </span><br><br>
+      <div ><img class="golgeli-kutu" src="../assets/f7.jpg" style="margin-left:50px" ></div><br><br>
+        <h3 style="color: red">Fonksiyon Parametrelerini Test Etmek</h3>
+		<span class="p"  style="color:black"  > Fonksiyonlara fonksiyonun tanımında yer alan parametreleri göndermek zorunlu değildir. Bu yüzden parametrenin gönderilip gönderilmediğini veya gönderilen parametrenin tipini sorgulamak durumunda kalabiliriz.
+       Bir parametrenin gönderilip gönderilmediğini şöyle sınayabiliriz.
+       </span><br><br>
+	   <div ><img class="golgeli-kutu" src="../assets/f8.jpg" style="margin-left:50px" ></div><br><br>
+	   <h3 style="color: red">Fonksiyonlar ve Değişken Kapsamı</h3>
+        <span class="p"  style="color:black"  > Fonksiyonlar kendi dışında tanımlanan değişkenleri tanırlar. Anca bir fonksiyonun içinde tanımlanmış olan değişkenler diğer fonksiyonlar tarafından veya dışarıdan görülmezler.
+       </span><br><br>
+	   <div ><img class="golgeli-kutu" src="../assets/f9.jpg" style="margin-left:50px" ></div><br><br>
+    <h3 style="color: red">Fonksiyon İçinde Fonksiyon Tanımlama</h3>
+	<span class="p"  style="color:black"  > Bir fonksiyonun içinde fonksiyon tanımlanabilir. Ancak bu fonksiyonun referansı döndürülmediği sürece başka fonksiyonlar tarafından tanınmazlar. Sadece tanımlandığı fonksiyonun içinde kullanılabilirler.
+       </span><br><br>
+	   <div ><img class="golgeli-kutu" src="../assets/f10.jpg" style="margin-left:50px" ></div><br><br>
+     <h3 style="color: red">Fonksiyonun Yeniden Tanımlanması</h3>
+		<span class="p"  style="color:black"  > Bir fonksiyon tanımı daha sonra değiştirilebilir. Fonksiyon çağırıldığında en son hangi durumu bildirilmişse o durum çalıştırılır.
+       </span><br><br>
+	   <div ><img class="golgeli-kutu" src="../assets/f11.jpg" style="margin-left:50px" ></div><br><br>
+      <h3>ÖDEVLER İÇİN</h3>
+	  <a href="../odev2.html">Adam Asma Oyunu</a><br><br>
+	  	  <a href="../odev3.html">Kullanıcı Form Sayfası</a><br><br>
+		  	  <a href="../odev4.html">Alışveriş Listesi</a><br><br>
+     </div>
+  </div>
+  
+   </div>
+   
+</body>
+</html>

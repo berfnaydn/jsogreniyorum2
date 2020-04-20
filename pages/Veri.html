@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/ss.css">
+	</head>
+<body>
+    <nav class="dropdownmenu">
+  <ul>
+    <li> <a   href=../index.html>Home</a></li>
+
+    <li><a href="#homework">Homework</a>
+      <ul id="submenu">
+        <li> <a href="Giriş.html">JavaScript Giriş</a></li>
+               <li> <a href="Syntax.html">JavaScript Yazılım (Syntax) yapısı</a></li>
+                <li> <a href="degiskenler.html">Değişkenler</a></li>
+                <li> <a href="Operatörler.html">Operatörler</a></li>
+               <li> <a href="Aritmetik.html">Aritmetik</a></li>
+                <li> <a href="Veri.html">Veri Tipleri</a></li>
+                <li> <a href="Fonksiyon.html">Fonksiyon Yapısı</a></li>
+               <li> <a href="Olaylar.html">Olaylar (Events)</a></li>
+                <li> <a href="Stringler.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a></li>
+                <li> <a href="koşul.html">If koşul yapıları</a></li>
+               <li> <a href="Döngüler.html">Döngüler</a></li>
+                <li> <a href="Tip.html">Tip Dönüşümleri</a></li>
+                <li> <a href="Calisma.html">Çalışma yapısı ve genel mimarisi</a></li>
+				<li> <a href="jsfonksiyon.html">JavaScript Fonksiyon Kullanımı</a></li>
+				<li> <a href="jsnesne.html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></li>
+				<li> <a href="jsdom.html">JavaScript DOM (Document Object Model) Kullanımı</a></li>
+			</ul>
+    </li>
+    
+  </ul>
+</nav>
+<br><br>
+  <div class="yazi">
+       <h1 class="baslik"> Veri Türleri</h1>
+    
+      <h2 style="color:brown">Veri Türü Nedir? </h2>
+       <span class="p"  style="color:black"  >İnsanlardan farklı olarak bilgisayarlar, 1234 ve abcd arasındaki farkı anlayamazlar. Yani hangisi sayı, hangisi metin bunu ayırt edemezler.<br>Veri türü, değişkenler içinde saklanacak verinin türüne göre sınıflandırılmasıdır. Veri türleri her programla dili için oldukça önemli bir kavramdır.<br>Bir uygulama geliştirirken değişken içinde saklanan verinin türünü önceden belirtiriz. Böylece bilgisayar verinin saklanacağı bellek alanını buna göre ayırır.<br>JavaScript değişkenleri çok farklı veri türlerini tutabilir. JavaScript programlama dilinde başlıca veri türleri sayı (number), metin(string) ve nesne (object) türleridir.
+       </span>
+       
+        <br>
+       <span class="p"  style="color:darkviolet"  >String (Metin):</span><span   style="color:black"> Bir string harf, sayı gibi karakter bileşenlerinden oluşan türdür.  Örneğin "Ali Veli", "Numara13", "abc" birer string türdür.
+       JavaScript programlama dilinde string veri türü tırnak içinde yazılır. Bu tırnak çift veya tek olabilir:</span> 
+       <div class="kutu">
+          
+              var websitesi = "berfinaydin.net";<br>
+            var websitesi = 'berfinaydin.net';<br>
+              
+        </div>
+        <span class="p"  style="color:darkviolet"  > Number (Sayı):</span><span   style="color:black"> JavaScript programlama dilinde sadece tek tür sayı vardır.
+       Bir değişkene sayılsal değer atanıyorsa bu değer tırnak içinde yazılmaz.Sayılarda ondalık bölüm nokta ile yazılır:</span> 
+       <div class="kutu">
+          
+              var sayi1 = 10;<br>
+           var sayi2 = 9.99;<br>
+              
+        </div>
+        
+        <span class="p"  style="color:darkviolet"  >Boolean (Doğru/Yanlış):</span><span   style="color:black">Boolean veri türü sadece iki değer alır: true (doğru) ve false (yanlış):</span> 
+       <div class="kutu">
+          
+              var ogrenciMi = true;<br>
+              var aktifMi = false;<br>
+        </div>
+        <span class="p"  style="color:darkviolet"  > Object (Nesne):</span><span   style="color:black"> JavaScript nesneleri süslü parantez {} ile oluşturulur.
+      Nesnenin özellikleri özellik:değer şeklinde virgül ile ayrılılarak yazılır.</span> 
+       <div class="kutu">
+          <br>
+        var kisi = { ad:"Ali", soyad:"Veli", yas: 40};<br>
+        </div> 
+        <span class="p"  style="color:darkviolet"  >  Typeof Operatörü:</span><span   style="color:black"> JavaScript typeof operatörü JavaScript değişkeninin veri türünü bulmak için kullanılır.typeof operatörü değişkenin türünü döndürür.</span> 
+       <div class="kutu">
+          
+        typeof "ali veli"; // string döndürür<br>
+        typeof 123; // number döndürür<br>
+        </div> 
+        <span class="p"  style="color:darkviolet"  > Undefined:</span><span   style="color:black"> JavaScript programlama dilinde, bir değişkene değer atanmazsa, bir değişkenin değeri yoksa undefined olarak ifade edilir.JavaScript typeof operatörü değer atanmamış değişkenler için undefined türünü döndürür.</span> 
+       <div class="kutu">
+          <br>
+       var kişi; //Bu değişkenin değeri undefined'tır, türü undefined'tır."<br>
+        </div> 
+        
+        <span class="p"  style="color:darkviolet"  > Null:</span><span   style="color:black"> JavaScript'te Null hiçbir şeydir.  Null hiç bir değer taşımamasına rağmen türü object yani nesnedir.Null türünü doğrudan kullanmazsınız. Fakat yapılan bazı işlemlerin sonucunda Null değer dönebili</span> 
+       <div class="kutu">
+          <br>
+       var ogrenci = null;<br>
+        </div> 
+       
+        
+     </div>
+  </div>
+  
+   </div>
+   
+</body>
+</html>

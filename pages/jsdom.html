@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/ss.css">
+	</head>
+<body>
+  <nav class="dropdownmenu">
+  <ul>
+    <li> <a   href=../index.html>Home</a></li>
+
+    <li><a href="#homework">Homework</a>
+      <ul id="submenu">
+        <li> <a href="Giriş.html">JavaScript Giriş</a></li>
+               <li> <a href="Syntax.html">JavaScript Yazılım (Syntax) yapısı</a></li>
+                <li> <a href="degiskenler.html">Değişkenler</a></li>
+                <li> <a href="Operatörler.html">Operatörler</a></li>
+               <li> <a href="Aritmetik.html">Aritmetik</a></li>
+                <li> <a href="Veri.html">Veri Tipleri</a></li>
+                <li> <a href="Fonksiyon.html">Fonksiyon Yapısı</a></li>
+               <li> <a href="Olaylar.html">Olaylar (Events)</a></li>
+                <li> <a href="Stringler.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a></li>
+                <li> <a href="koşul.html">If koşul yapıları</a></li>
+               <li> <a href="Döngüler.html">Döngüler</a></li>
+                <li> <a href="Tip.html">Tip Dönüşümleri</a></li>
+                <li> <a href="Calisma.html">Çalışma yapısı ve genel mimarisi</a></li>
+				<li> <a href="jsfonksiyon.html">JavaScript Fonksiyon Kullanımı</a></li>
+				<li> <a href="jsnesne.html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></li>
+				<li> <a href="jsdom.html">JavaScript DOM (Document Object Model) Kullanımı</a></li>
+			</ul>
+    </li>
+    
+  </ul>
+</nav>
+<br><br>
+  <div class="yazi">
+       <h1 class="baslik">JavaScript DOM (Document Object Model) Kullanımı</h1>
+     
+      <!--<h2 style="color:brown">JavaScript </h2>-->
+       <span class="p"  style="color:black"  > Tarayıcı bir Web sayfasını yüklendiğinde DOM nesnesini de oluşturur. Yüklenen DOM, belge için bir dizi düğüm ve nesne sunmaktadır. Düğümler ile ayrıca olaylar ve tetikleyiciler eklenebilir. Özetle programlama dilini WEB sayfasına bağlamak için kullanılır.
+       DOM modeli nesneleri aşağıdaki gibi ağaç yapısında oluşturmaktadır.
+       JavaScript, Nesne Modelini kullanarak  HTML belgesini düzenlemek için gerekli tüm yetkilere sahiptir. Aşağıdaki gibi belge üzerinde tüm işlemleri gerçekleştirebiliriz.
+       </span><br><br>
+	   <span class="p"  style="color:black">1-JavaScript sayfadaki tüm HTML öğrelerini değiştirebilir.<br>2-JavaScript sayfadaki tüm HTML niteliklerini değiştirebilir.<br>3-JavaScript sayfadaki tüm CSS stillerini değiştirebilir.<br>4-JavaScript mevcut HTML belgesindeki nitelikleri kaldırabilir.<br>5-JavaScript yeni HTML öğeleri ve nitelikleri ekleyebilir.<br>6-JavaScript sayfadaki tüm HTML olaylarına tepki gösterebilir.<br>7-JavaScript yeni HTML olayları oluşturabilir.<br>
+       </span>
+       <br><br>
+        <h3 style="color: red">HTML DOM Nedir?</h3>
+        <span class="p"  style="color:black">Nesne olarak HTML etiketi şunlara sahiptir.
+       </span><br><br>
+	   <span class="p"  style="color:black">1-HTML etiketleri birer nesnedir.<br>2-HTML etiketlerinin özellikleri<br>3-HTML etiketlerine erişim metodları<br>4-Tüm HTML etiketlerinin olayları<br><br>
+       </span>
+      
+		 <h3 style="color: red">DOM Programlama Arayüzü</h3><br><br>
+		 <span class="p"  style="color:black">*JavaScript ile Tüm HTML DOM ağacına ulaşabilirsiniz.<br>*DOM içinde tüm HTML etiketleri birer nesne (object) olarak oluşturulmuştur.<br>*Programlama arayüzü her etiket için metot(method) ve özellikler(property) sunar.<br>*Özellik( Property) etiket değeri üzerinde okuma ve değiştirme yapma imkanı sunar.(İçeriği değiştirme gibi)<br>*Methot (Method) etiket üzerinde eylemler gerçekleştirme imkanı sunar.(Yeni etiketler ekleme gibi)<br><br>
+       </span>
+	   
+       <span class="p"  style="color:black"  > Örnek: Aşağıdaki örnekte id değeri test olan bir etiketin içesindeki yazıyı değiştirme işlemi gerçekleştirilmiştir.  Örnekte getElementById metodu, innerHTML özelliği göstermektedir.
+       </span><br><br>
+	   <div ><img class="golgeli-kutu" src="../assets/f18.jpg" style="margin-left:50px" ></div><br><br>
+	   
+        <h3 style="color: red">getElementById Metodu</h3>
+        <span class="p"  style="color:black"  > Bir HTML etiketine erişmek için kullanılan en sık yöntemlerden biridir. Etiketin id niteliğini kullanır.
+       </span><br><br>
+        <h3 style="color: red">innerHTML Özelliği</h3>
+		<span class="p"  style="color:black"  > Bir HTML etiketinin içeriğini öğrenmenin en kolay yoludur.  innerHTML ile etiketin içeriğini almak yada değiştirmek mümkündür.
+       </span><br><br>
+	   
+	   <h3 style="color: red">HTML DOM document Nesnesi</h3>
+        <span class="p"  style="color:black"  > document nesnesi web sayfasını temsil eder.
+         Sayfa içindeki her hangi bir elemente ulaşmak için document nesnesi ile başlamak zorundasınız.  HTML etiketleri üzerinde düzenleme yapmak için kullanılan bazı document metotları aşağıda gösterilmiştir.
+       </span><br><br>
+	   
+    <h3 style="color: red">HTML Etiketlerini Seçme</h3>
+	<span class="p"  style="color:black">*document.getElementById(id): id niteliği ile eşleşen ilk kaydı getirir.<br>*document.getElementsByName(name): name niteliği ile eşleşen tüm kayıtları dizi olarak  getirir.<br>*document.getElementsByTagName(etiketadı):etiket adı ile eşleşen tüm kayıtları dizi olarak getirir.<br>*document.getElementsByClassName(classAdı):class niteliği ile eşleşen tüm kayıtları dizi olarak getirir.<br>*document.querySelector(seçici): seçici ile eşleşen ilk kaydı getirir.<br>*document.querySelectorAll(seçici): seçici ile eşleşen tüm kayıtları dizi olarak getir.<br>
+       </span>
+	   
+	<span class="p"  style="color:black"  > document.getElementById kullanımı
+       </span><br><br>
+	   <div ><img class="golgeli-kutu" src="../assets/f19.jpg" style="margin-left:30px" ></div><br><br>
+     <span class="p"  style="color:black"  > document.getElementsByName kullanımı
+       </span><br><br>
+		 <div ><img class="golgeli-kutu" src="../assets/f20.jpg" style="margin-left:30px" ></div><br><br>
+	   
+     <span class="p"  style="color:black"  > document.getElementsByTagName kullanımı
+       </span><br><br>
+	   <div ><img class="golgeli-kutu" src="../assets/f21.jpg" style="margin-left:30px" ></div><br><br>
+	   <h3 style="color: red">HTML Etiketlerini Düzenleme</h3>
+	   <span class="p"  style="color:black">*etiket.innerHTML: Etiketin içini okuma ve değiştirme için kullanılır.<br>*etiket.attribute: Etiketin niteliğini değiştirmek için kullanılır.<br>*etiket.setAttribute(nitelik, değeri): Etiketin niteliğini değiştirmek için kullanılır.<br>*etiket.style.property:  Etiketin stilini değiştirmek için kullanılır.<br>*etiket.classList: etiketlerin class niteliği üzerinde silme,değiştirme, ekleme, class listesini öğrenme gibi işlemleri yapmak için kullanılır.<br>
+       </span>
+	   <span class="p"  style="color:black"  > etiket.innerHTML kullanımı
+       </span><br><br>
+	   <div ><img class="golgeli-kutu" src="../assets/f22.jpg" style="margin-left:30px" ></div><br><br>
+	   <h3 style="color: red">HTML Etiketi Ekleme ve Silme</h3>
+	   <span class="p"  style="color:black">*document.createElement(element) :HTML etiketi oluşturma.<br>*document.removeChild(element): HTML etiketi silme.<br>*document.appendChild(element): HTML etiketi ekleme.<br>*document.replaceChild(element): HTML etiketini değiştirme<br><br>
+       </span>
+	    <div ><img class="golgeli-kutu" src="../assets/f23.jpg" style="margin-left:30px" ></div><br><br>
+	   
+	   
+	   <h3 style="color: red">HTML Etiketine Olay Ekleme</h3>
+	   <span class="p"  style="color:black"  > HTML etiketine olay eklemek için iki yöntem mevcut.
+       </span><br><br>
+	   <span class="p"  style="color:black"  > 1.Yöntem: HTML etiketlerine addEventListener metotu ile olay eklemesi yapılabilir.
+       </span><br><br>
+	   <span class="p"  style="color:black"  > 2.Yöntem: HTML etiketine olay özelliği ile olay eklemesi yapılabilir.
+       </span><br><br>
+	   <div ><img class="golgeli-kutu" src="../assets/f24.jpg" style="margin-left:30px" ></div><br><br>
+     </div>
+  </div>
+  
+   </div>
+   
+</body>
+</html>

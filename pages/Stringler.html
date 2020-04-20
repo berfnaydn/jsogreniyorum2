@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/ss.css">
+	</head>
+<body>
+    <nav class="dropdownmenu">
+  <ul>
+    <li> <a   href=../index.html>Home</a></li>
+
+    <li><a href="#homework">Homework</a>
+      <ul id="submenu">
+        <li> <a href="Giriş.html">JavaScript Giriş</a></li>
+               <li> <a href="Syntax.html">JavaScript Yazılım (Syntax) yapısı</a></li>
+                <li> <a href="degiskenler.html">Değişkenler</a></li>
+                <li> <a href="Operatörler.html">Operatörler</a></li>
+               <li> <a href="Aritmetik.html">Aritmetik</a></li>
+                <li> <a href="Veri.html">Veri Tipleri</a></li>
+                <li> <a href="Fonksiyon.html">Fonksiyon Yapısı</a></li>
+               <li> <a href="Olaylar.html">Olaylar (Events)</a></li>
+                <li> <a href="Stringler.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a></li>
+                <li> <a href="koşul.html">If koşul yapıları</a></li>
+               <li> <a href="Döngüler.html">Döngüler</a></li>
+                <li> <a href="Tip.html">Tip Dönüşümleri</a></li>
+                <li> <a href="Calisma.html">Çalışma yapısı ve genel mimarisi</a></li>
+				<li> <a href="jsfonksiyon.html">JavaScript Fonksiyon Kullanımı</a></li>
+				<li> <a href="jsnesne.html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></li>
+				<li> <a href="jsdom.html">JavaScript DOM (Document Object Model) Kullanımı</a></li>
+			</ul>
+    </li>
+    
+  </ul>
+</nav>
+<br><br>
+  <div class="yazi">
+       <h1 class="baslik">String İfadeler</h1>
+     
+      <!--<h2 style="color:brown">JavaScript </h2>-->
+       <span class="p"  style="color:black"  > JavaScript metin veri türü veya string BERFİN AYDIN gibi harflerden oluşan değerleri saklamak ve üzerinde işlem yapmak için kulllanılır.<br>
+       Metin veri türünün değeri çift veya tek tırnak arasına yazılır.
+       </span>
+       
+        <h3 style="color: red">JavaScript'te String İşlemleri ;</h3>
+        <span class="p"  style="color:black">String (Metinsel) nesneler ile çalışırken kullanabileceğiniz String fonksiyonları<br><br>
+       </span>
+        
+       <span class="p"  style="color:darkviolet"  > JavaScript length Kullanımı:</span><span   style="color:black"> Bir String nesnesinin uzunluğunu vermektedir..</span> <br>
+       <div class="kutu">
+          
+              var isim="Berfin";<br>
+              var isim_uzunluk=isim.length;<br>
+              console.log(isim_uzunluk);<br>
+              
+        </div>
+        <span class="p"  style="color:darkviolet"  > startsWith() Kullanımı:</span><span   style="color:black">String nesnesinin belirtilen karakterle ile başlıyor mu kontrol eder.</span> 
+       <div class="kutu">
+          
+            let str = '#Evde Kal Türkiye';
+ 
+              console.log(str.startsWith('evde'));<br> 
+              console.log(str.startsWith('kal'));<br>
+              console.log(str.startsWith('korona'));<br> 
+
+              console.log(str.startsWith('Türkiye', 10));<br>
+              console.log(str.startsWith('TÜRKİYE', 10));<br>
+              
+        </div>
+        
+        <span class="p"  style="color:darkviolet"  > indexOf(fromIndex) Kullanımı:</span><span   style="color:black">Metin içinde arama yapmak için kullanılır.</span> 
+       <div class="kutu">
+              
+              var metin = "Merhaba ben Berfin AYDIN";<br>
+              alert(metin.indexOf("Berfin"));
+            <br>
+        </div>
+        <span class="p"  style="color:darkviolet"  >slice() Kullanımı:</span><span   style="color:black">Orjinal olan Dtring ifadeyi değiştirmeden stringin  belirtilen bir parçasını alır.</span> 
+       <div class="kutu">
+          
+        var kelime = "bugun hhava çok güzel";<br>
+        var parca = "";<br>
+        parca=str.slice();<br>
+         console.log(parca);<br>
+         
+         parca=str.slice(4);<br>
+        console.log(parca);<br>
+        parca=str.slice(0,10);<br>
+        console.log(parca);<br>
+       
+        </div> 
+        <span class="p"  style="color:darkviolet"  >toUpperCase():</span><span   style="color:black"> String ifadesini büyük harflere çevirir.</span> 
+       <div class="kutu">
+          
+        var kelime = 'berfin aydın';<br>
+         console.log(kelime.toUpperCase());<br>
+        </div> 
+
+        
+     </div>
+  </div>
+  
+   </div>
+   
+</body>
+</html>
